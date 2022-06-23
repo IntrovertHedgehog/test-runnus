@@ -6571,6 +6571,7 @@ textarea.form-control-lg {
 
 .w-100 {
   width: 100% !important;
+  word-wrap: break-word;
 }
 
 .w-auto {
