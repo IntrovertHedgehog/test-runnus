@@ -10967,3 +10967,11 @@ footer .copyright span {
   border-color: #f5751d;
 }
 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #304b78;
+  opacity: 0.65;
+  top: 0;
+}

@@ -1,396 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>RunNUS 2022 - Run for a Cause</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
-        <!-- Bootstrap icons :D-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="dist/css/styles.css" rel="stylesheet" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201309008-1">
-        </script>
-        <script>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>RunNUS 2022 - Run for a Cause</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
+    <!-- Bootstrap icons :D-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="dist/css/styles.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201309008-1">
+    </script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-201309008-1');
-        </script>
-    </head>
-    <body class="d-flex flex-column h-100 w-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container px-5">
-                        <a class="navbar-brand" href="index.html"><img src="img/runnus2022logowhite.png" alt="..." width="12%" height="10%" /></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link" href="index.html" style="margin-right: 10px;">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="dist/about.html" style="margin-right: 10px;">About</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 10px;" hidden>Information</a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                        <li><a class="dropdown-item" href="dist/delivery.html">Race Entitlements - Delivery  </a></li>
-                                        <li><a class="dropdown-item" href="dist/selfcollection.html">Race Entitlements - Self-Collection (NUS Only)  </a></li>
-                                        <li><a class="dropdown-item" href="#">E-booklet  </a></li>
-                                        <li><a class="dropdown-item" href="#">Volunteer Registration  </a></li>
-                                    </ul>
-                                  </li>
-                                <li class="nav-item"><a class="nav-link" href="dist/runquest.html" style="margin-right: 10px;" hidden>RunQuest</a></li>
-                                <li class="nav-item"><a class="nav-link" href="dist/faq.html" style="margin-right: 10px;"hidden>FAQ</a></li>
-                                <li class="nav-item dropdown" hidden>
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 10px;">Blog</a>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                        <li><a class="dropdown-item" href="dist/blog-home.html">Blog Home  </a></li>
-                                        <li><a class="dropdown-item" href="dist/blog-central.html">Central Routes  </a></li>
-                                        <li><a class="dropdown-item" href="dist/blog-northern.html">Northern Routes  </a></li>
-                                        <li><a class="dropdown-item" href="dist/blog-northeastern.html">North-Eastern Routes  </a></li>
-                                        <li><a class="dropdown-item" href="dist/blog-eastern.html">Eastern Routes  </a></li>
-                                        <li><a class="dropdown-item" href="dist/blog-southern.html">Southern Routes  </a></li>
-                                        <li><a class="dropdown-item" href="dist/blog-western.html">Western Routes  </a></li>
-                                    </ul>
+    </script>
+    <style>
+        .regbtn {
+            min-width: 40%;
+        }
+
+        @media only screen and (max-width: 991px) {
+            .regbtn {
+                min-width: 210px;
+            }
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100 w-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><img src="img/runnus2022logowhite.png" alt="..." width="12%"
+                        height="10%" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html" style="margin-right: 10px;">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="dist/about.html"
+                                style="margin-right: 10px;">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 10px;"
+                                hidden>Information</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="dist/delivery.html">Race Entitlements - Delivery </a>
                                 </li>
-                                <li class="nav-item btn-warning"><a class="nav-link" href="#" style="padding-left: 20px; padding-right: 20px; color: white; text-decoration: none; font-weight: bold;" hidden>Submit</a></li>
+                                <li><a class="dropdown-item" href="dist/selfcollection.html">Race Entitlements -
+                                        Self-Collection (NUS Only) </a></li>
+                                <li><a class="dropdown-item" href="#">E-booklet </a></li>
+                                <li><a class="dropdown-item" href="#">Volunteer Registration </a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="dist/runquest.html" style="margin-right: 10px;"
+                                hidden>RunQuest</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dist/faq.html" style="margin-right: 10px;"
+                                hidden>FAQ</a></li>
+                        <li class="nav-item dropdown" hidden>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 10px;">Blog</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="dist/blog-home.html">Blog Home </a></li>
+                                <li><a class="dropdown-item" href="dist/blog-central.html">Central Routes </a></li>
+                                <li><a class="dropdown-item" href="dist/blog-northern.html">Northern Routes </a></li>
+                                <li><a class="dropdown-item" href="dist/blog-northeastern.html">North-Eastern Routes
+                                    </a></li>
+                                <li><a class="dropdown-item" href="dist/blog-eastern.html">Eastern Routes </a></li>
+                                <li><a class="dropdown-item" href="dist/blog-southern.html">Southern Routes </a></li>
+                                <li><a class="dropdown-item" href="dist/blog-western.html">Western Routes </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item btn-warning"><a class="nav-link" href="https://tinyurl.com/RunNUS2022"
+                                style="padding-left: 20px; padding-right: 20px; color: white; text-decoration: none; font-weight: bold;">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5 bg-images">
+            <div class="overlay"></div>
+            <div class="container px-5" style="position: relative;">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-white mb-2"
+                            style="text-shadow: 4px 4px black; padding-bottom: 25px; font-style: italic; font-family: sans-serif Helvetica;">
+                            Run For a Cause</h1>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-warning btn-lg px-4 me-sm-3" href="#"
+                                style="font-weight: bold; color: white; text-decoration: none;" hidden>Submit Race
+                                Proof</a>
+                            <a class="btn btn-warning btn-lg px-4 me-sm-3" href="https://tinyurl.com/RunNUS2022"
+                                style="font-weight: bold; color: white; text-decoration: none;">Register now!</a>
+                            <a class="btn btn-primary btn-light btn-lg px-4" href="#features">Learn More</a>
                         </div>
                     </div>
-            </nav>
-            <!-- Header-->
-            <header class="bg-dark py-5 bg-images">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2" style="text-shadow: 4px 4px black; padding-bottom: 25px; font-style: italic; font-family: sans-serif Helvetica;">Run For a Cause</h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-warning btn-lg px-4 me-sm-3" href="#" style="font-weight: bold; color: white; text-decoration: none;" hidden>Submit Race Proof</a>
-                                    <a class="btn btn-warning btn-lg px-4 me-sm-3" href="https://tinyurl.com/RunNUS2022" style="font-weight: bold; color: white; text-decoration: none;">Register now!</a>
-                                    <a class="btn btn-primary btn-light btn-lg px-4" href="#features">Learn More</a>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
+                        src="img/runnus2022logowhite.png" alt="..." style="-webkit-filter: drop-shadow(5px 5px 5px #222);
+                            filter: drop-shadow(5px 5px 5px #222); " /></div>
+            </div>
+            </div>
+        </header>
+        <!-- Testimonial section-->
+        <div class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-9 col-xl-9">
+                        <div class="text-center">
+                            <h1 style="margin-top: -40px; margin-bottom: 50px;">About RunNUS</h1>
+                            <div class="fs-12 mb-12">
+                                <p class="lead fw-normal text-muted mb-0">
+                                    RunNUS is an annual run organised by NUS Students' Sports Club
+                                    for the past 15 years. Since its inception in 2007, RunNUS has
+                                    attracted a wide range of participants, comprising of NUS students,
+                                    staff and alumni, international students and members of the public.
+                                    Traditionally, RunNUS offers 3 race categories (3km, 5km and
+                                    10km). This year, RunNUS is initiating a brand new segment where
+                                    participants can form teams of 5 and complete the race together as
+                                    one.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features section-->
+        <section class="py-5" id="features">
+            <div class="container px-5 my-5 justify-content-center">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <h1 class="fw-bolder">Race Details</h1>
+                            <h2 class="fw-bolder">17 August to 17 September 2022</h2><br>
+                            <!-- <h3 class="fw-bolder">Submissions will extended till <br>26 September 2022!</h3> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5 text-center">
+                    <div>
+                        <button type="submit" class="btn btn-warning text-white shadow regbtn"
+                            style="margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
+                            <a class="row justify-content-center" href="https://tinyurl.com/RunNUS2022"
+                                style="text-decoration: none; color: white">Register now!</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-warning text-white shadow disabled regbtn"
+                            style="margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
+                            <a class="row justify-content-center" href="#"
+                                style="text-decoration: none; color: white">E-booklet (Coming Soon!)</a>
+                        </button>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-warning text-white shadow regbtn"
+                            style="margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
+                            <a class="row justify-content-center" href="http://tinyurl.com/RunNUS2022Volunteer"
+                                style="text-decoration: none; color: white">Sign up as a volunteer</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/timeline.png" alt="..." /></div>
+                    <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/early-bird-2022.png" alt="..." />
+                    </div>
+                    <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/entitlements.png" alt="..." />
+                    </div>
+                    <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/clinic.png" alt="..." /></div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light" id="features" hidden>
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bolder">Race Entitlements</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-11"><img class="img-fluid rounded-3 mb-5 shadow" src="img/entitlements.png"
+                            alt="..." /></div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bolder">Our Sponsors</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-11" style="margin-left:5px;"><img class="img-fluid rounded-3 mb-4"
+                            src="img/sponsors/logos/1.png" alt="..." /></div>
+                    <div class="col-11" style="margin-left:5px;"><img class="img-fluid rounded-3 mb-4"
+                            src="img/sponsors/logos/2.png" alt="..." /></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Blog preview section-->
+        <section class="py-5" hidden>
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="text-center">
+                            <h2 class="fw-bolder">From our blog</h2>
+                            <p class="lead fw-normal text-muted mb-5">Read what our committee has to say!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/routes/bishan10k.png" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="dist/blog-central.html">
+                                    <h5 class="card-title mb-3">Central Route</h5>
+                                </a>
+                                <p class="card-text mb-0">The Bishan-Ang Mo Kio Park is a popular spot for runners and
+                                    fitness enthusiasts, and it is an excellent choice to have a run at because of its
+                                    size, easy terrain, and well-lit paths. For runners who like to run with their dogs,
+                                    there’s a dog park to bring your furry friends to! </p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/routes/thumbnails/5.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">Kitahara Yutaro</div>
+                                            <div class="text-muted">21 June, 2021 &middot; 6 min read</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="img/runnus2022logowhite.png" alt="..." style="-webkit-filter: drop-shadow(5px 5px 5px #222);
-                            filter: drop-shadow(5px 5px 5px #222); "/></div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/routes/south10k.png" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="dist/blog-southern.html">
+                                    <h5 class="card-title mb-3">Southern Route</h5>
+                                </a>
+                                <p class="card-text mb-0">This route is great for beginner runners and for any runner
+                                    who wants to have a good run while taking in the scenic sights of the Marina Bay
+                                    cityscape. This route is made for the classic Singapore night run.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/routes/thumbnails/3.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">Tien Yok Chong</div>
+                                            <div class="text-muted">21 June, 2021 &middot; 4 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/routes/east10k.png" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="dist/blog-eastern.html">
+                                    <h5 class="card-title mb-3">Eastern Route</h5>
+                                </a>
+                                <p class="card-text mb-0">This route is a rather popular one besides East Coast Park in
+                                    the east for runners and campers. The route is also close to many attractions like
+                                    the Wild Wild Wet, Downtown East, White Sands and a fishing pond; making it great
+                                    for a group of friends or family to come together for a nice run!</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/routes/thumbnails/2.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">Lin Xiao Xian</div>
+                                            <div class="text-muted">20 June, 2021 &middot; 8 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </header>
-             <!-- Testimonial section-->
-            <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-9 col-xl-9">
-                            <div class="text-center">
-                                <h1 style="margin-top: -40px; margin-bottom: 50px;">About RunNUS</h1>
-                                <div class="fs-12 mb-12">
-                                    <p class="lead fw-normal text-muted mb-0">
-                                        RunNUS is an annual run organised by NUS Students' Sports Club
-                                        for the past 15 years. Since its inception in 2007, RunNUS has
-                                        attracted a wide range of participants, comprising of NUS students,
-                                        staff and alumni, international students and members of the public.
-                                        Traditionally, RunNUS offers 3 race categories (3km, 5km and
-                                        10km). This year, RunNUS is initiating a brand new segment where
-                                        participants can form teams of 5 and complete the race together as
-                                        one.
-                                    </p>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/routes/north10k.png" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="dist/blog-northern.html">
+                                    <h5 class="card-title mb-3">Northern Route</h5>
+                                </a>
+                                <p class="card-text mb-0">This route is a classic for the north-siders, the scenic views
+                                    and tranquility makes the run a revitalising experience and a nice escape from the
+                                    busyness.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/routes/thumbnails/2.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">Lin Xiao Xian</div>
+                                            <div class="text-muted">20 June, 2021 &middot; 6 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/routes/ne10k.png" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
+                                <a class="text-decoration-none link-dark stretched-link"
+                                    href="dist/blog-northeastern.html">
+                                    <h5 class="card-title mb-3">North-Eastern Route</h5>
+                                </a>
+                                <p class="card-text mb-0">The Punggol PCN and Punggol Waterway PCN both serve the
+                                    purpose they’re designed for perfectly. Besides being accessible for the Punggol and
+                                    Northeast residents, it is also a perfect route for runners who enjoy simple and
+                                    straightforward routes. </p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/routes/thumbnails/1.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">Shevin Teng</div>
+                                            <div class="text-muted">20 June, 2021 &middot; 4 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/routes/ctc10k.png" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="dist/blog-western.html">
+                                    <h5 class="card-title mb-3">Western Route</h5>
+                                </a>
+                                <p class="card-text mb-0">This route is for those who want to visit the Coast-to-Coast
+                                    checkpoints in the West while clocking in their runs! Expect to experience running
+                                    through nature and the concrete jungle all in a single run. </p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/routes/thumbnails/4.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">Myat Pan Yone</div>
+                                            <div class="text-muted">20 June, 2021 &middot; 10 min read</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Features section-->
-            <section class="py-5" id="features">
-                <div class="container px-5 my-5 justify-content-center">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="text-center">
-                                <h1 class="fw-bolder">Race Details</h1>
-                                <h2 class="fw-bolder">17 August to 17 September 2022</h2><br>
-                                <!-- <h3 class="fw-bolder">Submissions will extended till <br>26 September 2022!</h3> -->
-                            </div>
-                        </div>
+        </section>
+        <!-- Page content-->
+        <section class="py-5" id="contact us">
+            <div class="container px-5">
+                <h2>Contact Us!</h2>
+                <!-- Contact cards-->
+                <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-instagram"></i></div>
+                        <div class="h5 mb-2">Instagram</div>
+                        <p class="text-muted mb-0">Follow us at <a href="https://www.instagram.com/runnus">@runnus</a>
+                        </p>
                     </div>
-                    <div class="row mb-5 text-center">
-                        <div>
-                            <button type="submit" class="btn btn-warning text-white shadow" style="min-width: 40%; margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
-                                <a class="row justify-content-center" href ="https://tinyurl.com/RunNUS2022" style="text-decoration: none; color: white">Register now!</a>
-                            </button>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-warning text-white shadow disabled" style="min-width: 40%; margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
-                                <a class="row justify-content-center" href ="#" style="text-decoration: none; color: white">E-booklet (Coming Soon!)</a>
-                            </button>
-                        </div>
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-facebook"></i></div>
+                        <div class="h5">Facebook</div>
+                        <p class="text-muted mb-0">Like us at <a href="https://www.facebook.com/runnus">@runnus</a></p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-telegram"></i></div>
+                        <div class="h5">Telegram</div>
+                        <p class="text-muted mb-0">Get the latest updates at <a href="https://t.me/runnus">@runnus</a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-mailbox"></i></div>
+                        <div class="h5">Email</div>
+                        <p class="text-muted mb-0">Email us at <a
+                                href="mailto:admin@runnus.nussportsclub.org">admin@runnus.nussportsclub.org</a></p>
+                    </div>
 
-                        <div>
-                            <button type="submit" class="btn btn-warning text-white shadow" style="min-width: 40%; margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
-                                <a class="row justify-content-center" href ="http://tinyurl.com/RunNUS2022Volunteer" style="text-decoration: none; color: white">Sign up as a volunteer</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="text-center">    
-                        <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/timeline.png" alt="..." /></div>
-                        <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/early-bird-2022.png" alt="..." /></div>
-                        <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/entitlements.png" alt="..." /></div>
-                        <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/clinic.png" alt="..." /></div>
-                    </div>
                 </div>
-            </section>
-            <section class="py-5 bg-light" id="features" hidden>
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-5">
-                                <h1 class="fw-bolder">Race Entitlements</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-11"><img class="img-fluid rounded-3 mb-5 shadow" src="img/entitlements.png" alt="..." /></div>
-                    </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
                 </div>
-            </section>
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-5">
-                                <h1 class="fw-bolder">Our Sponsors</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-11" style="margin-left:5px;"><img class="img-fluid rounded-3 mb-4" src="img/sponsors/logos/1.png" alt="..." /></div>
-                        <div class="col-11" style="margin-left:5px;"><img class="img-fluid rounded-3 mb-4" src="img/sponsors/logos/2.png" alt="..." /></div>
-                    </div>
+                <div class="row gx-1">
+                    <div class="col-12" style="margin-left:5px;"><img class="img-fluid rounded-3 mb-4"
+                            src="img/banner.png" alt="..." /></div>
                 </div>
-                </div>
-            </section>
-            <!-- Blog preview section-->
-            <section class="py-5" hidden>
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="text-center">
-                                <h2 class="fw-bolder">From our blog</h2>
-                                <p class="lead fw-normal text-muted mb-5">Read what our committee has to say!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="img/routes/bishan10k.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="dist/blog-central.html"><h5 class="card-title mb-3">Central Route</h5></a>
-                                    <p class="card-text mb-0">The Bishan-Ang Mo Kio Park is a popular spot for runners and fitness enthusiasts, and it is an excellent choice to have a run at because of its size, easy terrain, and well-lit paths. For runners who like to run with their dogs, there’s a dog park to bring your furry friends to! </p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/routes/thumbnails/5.jpg" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Kitahara Yutaro</div>
-                                                <div class="text-muted">21 June, 2021 &middot; 6 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="img/routes/south10k.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="dist/blog-southern.html"><h5 class="card-title mb-3">Southern Route</h5></a>
-                                    <p class="card-text mb-0">This route is great for beginner runners and for any runner who wants to have a good run while taking in the scenic sights of the Marina Bay cityscape. This route is made for the classic Singapore night run.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/routes/thumbnails/3.jpg" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Tien Yok Chong</div>
-                                                <div class="text-muted">21 June, 2021 &middot; 4 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="img/routes/east10k.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="dist/blog-eastern.html"><h5 class="card-title mb-3">Eastern Route</h5></a>
-                                    <p class="card-text mb-0">This route is a rather popular one besides East Coast Park in the east for runners and campers. The route is also close to many attractions like the Wild Wild Wet, Downtown East, White Sands and a fishing pond; making it great for a group of friends or family to come together for a nice run!</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/routes/thumbnails/2.jpg" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Lin Xiao Xian</div>
-                                                <div class="text-muted">20 June, 2021 &middot; 8 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="img/routes/north10k.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="dist/blog-northern.html"><h5 class="card-title mb-3">Northern Route</h5></a>
-                                    <p class="card-text mb-0">This route is a classic for the north-siders, the scenic views and tranquility makes the run a revitalising experience and a nice escape from the busyness.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/routes/thumbnails/2.jpg" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Lin Xiao Xian</div>
-                                                <div class="text-muted">20 June, 2021 &middot; 6 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="img/routes/ne10k.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="dist/blog-northeastern.html"><h5 class="card-title mb-3">North-Eastern Route</h5></a>
-                                    <p class="card-text mb-0">The Punggol PCN and Punggol Waterway PCN both serve the purpose they’re designed for perfectly. Besides being accessible for the Punggol and Northeast residents, it is also a perfect route for runners who enjoy simple and straightforward routes. </p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/routes/thumbnails/1.jpg" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Shevin Teng</div>
-                                                <div class="text-muted">20 June, 2021 &middot; 4 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="img/routes/ctc10k.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Article</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="dist/blog-western.html"><h5 class="card-title mb-3">Western Route</h5></a>
-                                    <p class="card-text mb-0">This route is for those who want to visit the Coast-to-Coast checkpoints in the West while clocking in their runs! Expect to experience running through nature and the concrete jungle all in a single run. </p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/routes/thumbnails/4.jpg" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Myat Pan Yone</div>
-                                                <div class="text-muted">20 June, 2021 &middot; 10 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-            </section>
-            <!-- Page content-->
-            <section class="py-5" id="contact us">
-                <div class="container px-5">
-                    <h2>Contact Us!</h2>
-                    <!-- Contact cards-->
-                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
-                        <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-instagram"></i></div>
-                            <div class="h5 mb-2">Instagram</div>
-                            <p class="text-muted mb-0">Follow us at <a href="https://www.instagram.com/runnus">@runnus</a></p>
-                        </div>
-                        <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-facebook"></i></div>
-                            <div class="h5">Facebook</div>
-                            <p class="text-muted mb-0">Like us at <a href="https://www.facebook.com/runnus">@runnus</a></p>
-                        </div>
-                        <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telegram"></i></div>
-                            <div class="h5">Telegram</div>
-                            <p class="text-muted mb-0">Get the latest updates at <a href="https://t.me/runnus">@runnus</a></p>
-                        </div>
-                        <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-mailbox"></i></div>
-                            <div class="h5">Email</div>
-                            <p class="text-muted mb-0">Email us at <a href="mailto:admin@runnus.nussportsclub.org">admin@runnus.nussportsclub.org</a></p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                    </div>
-                    <div class="row gx-1">
-                        <div class="col-12" style="margin-left:5px;"><img class="img-fluid rounded-3 mb-4" src="img/banner.png" alt="..." /></div>
-                    </div>
-                </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer>
-          <div class="container">
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer>
+        <div class="container">
             <div class="row">
 
-              <div class="col-lg-6 col-md-6">
-                <h3>Site Map</h3>
+                <div class="col-lg-6 col-md-6">
+                    <h3>Site Map</h3>
                     <ul class="list-unstyled three-column">
-                      <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-                      <li><a href="dist/about.html" style="text-decoration: none;">About</a></li>
-                      <li><a href="#contact us" style="text-decoration: none;" >Contact us</a></li>
-                      <li><a href="dist/blog-home.html" style="text-decoration: none;" hidden>Blog Home</a></li>
-                      <li><a href="#" style="text-decoration: none;" hidden>Submit Race Proof</a></li>
+                        <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                        <li><a href="dist/about.html" style="text-decoration: none;">About</a></li>
+                        <li><a href="#contact us" style="text-decoration: none;">Contact us</a></li>
+                        <li><a href="dist/blog-home.html" style="text-decoration: none;" hidden>Blog Home</a></li>
+                        <li><a href="#" style="text-decoration: none;" hidden>Submit Race Proof</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <h3>Our Beneficiaries</h3>
-                    <img class="img-thumbnail" src="img/sponsors/sdsc.png" alt="" width="30%" height="30%" style="margin-right: 50px"/>
+                    <img class="img-thumbnail" src="img/sponsors/sdsc.png" alt="" width="30%" height="30%"
+                        style="margin-right: 50px" />
                     <img class="img-thumbnail" src="img/sponsors/dpa.png" alt="" width="20%" height="20%" />
                 </div>
 
             </div>
-          </div>
-          <div class="copyright text-center">
-              A Project of: &nbsp;
-              <img src="img/sponsors/sc.png" width="10%" style="margin-bottom: 5px;"/><br>
+        </div>
+        <div class="copyright text-center">
+            A Project of: &nbsp;
+            <img src="img/sponsors/sc.png" width="10%" style="margin-bottom: 5px;" /><br>
             Copyright &copy; 2022 <a href="https://www.nussportsclub.org/">NUS Students' Sports Club</a>
-              
-          </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
