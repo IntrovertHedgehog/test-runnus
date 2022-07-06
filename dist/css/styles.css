@@ -10975,3 +10975,7 @@ footer .copyright span {
   opacity: 0.65;
   top: 0;
 }
+
+.chosen {
+  color: #f5751d !important;
+}
