@@ -34,6 +34,20 @@
                 min-width: 210px;
             }
         }
+
+        .mb {
+            display: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .pc {
+                display: none;
+            }
+
+            .mb {
+                display: inline;
+            }
+        }
     </style>
 </head>
 
@@ -107,12 +121,20 @@
                 <div class="col-lg-8">
                     <div class="text-center text-xl-start"
                         style="display: flex; align-items: center; flex-direction:column">
-                        <h3 class="display-8 fw-bolder text-white mb-2"
+                        <h3 class="display-8 fw-bolder text-white mb-2 pc"
                             style="font-family: sans-serif Helvetica;font-size: xx-large">
                             VIRTUAL RACE: 17 AUG - 17 SEP 2022</h3>
-                        <h3 class="display-8 fw-bolder text-white mb-2"
+                        <h3 class="display-8 fw-bolder text-white mb-2 pc"
                             style="font-family: sans-serif Helvetica;font-size: xx-large;">
                             PHYSICAL RACE: 17 SEP 2022 (SAT)</h3>
+
+                        <!-- mobile view -->
+                        <h3 class="display-8 fw-bolder text-white mb-2 mb"
+                        style="font-family: sans-serif Helvetica;font-size: xx-large;">
+                        VIRTUAL RACE:<br> 17 AUG - 17 SEP 2022</h3>
+                        <h3 class="display-8 fw-bolder text-white mb-2 mb"
+                            style="font-family: sans-serif Helvetica;font-size: xx-large;">
+                            PHYSICAL RACE:<br> 17 SEP 2022 (SAT)</h3>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                             <a class="btn btn-warning btn-lg px-4 me-sm-3" href="#"
                                 style="font-weight: bold; color: white; text-decoration: none;" hidden>Submit Race
