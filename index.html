@@ -17,6 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201309008-1">
     </script>
+    <script defer src="./dist/js/countdown.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -26,7 +27,7 @@
     </script>
     <style>
         .regbtn {
-            min-width: 40%;
+            min-width: 30%;
         }
 
         @media only screen and (max-width: 991px) {
@@ -39,6 +40,12 @@
             display: none;
         }
 
+        .buttons {
+            display: flex;
+            justify-content: center; 
+            gap: 136px;
+        }
+
         @media only screen and (max-width: 767px) {
             .pc {
                 display: none;
@@ -47,7 +54,17 @@
             .mb {
                 display: inline;
             }
+
+            
         }
+
+        @media only screen and (max-width: 1070px) {
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
     </style>
 </head>
 
@@ -103,7 +120,7 @@
                                 <li><a class="dropdown-item" href="dist/blog-western.html">Western Routes </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item btn-warning"><a class="nav-link" href="https://tinyurl.com/RunNUS2022"
+                        <li class="nav-item btn-warning"><a class="nav-link" href="https://bit.ly/RUNNUS2022"
                                 style="padding-left: 20px; padding-right: 20px; color: white; text-decoration: none; font-weight: bold;">Register</a>
                         </li>
                     </ul>
@@ -112,34 +129,34 @@
         </nav>
         <!-- Header-->
         <header class="bg-dark py-1 bg-images"
-            style="display: flex; align-items: center; flex-direction: column; height: 62vh">
+            style="display: flex; align-items: center; flex-direction: column; height: 36vh">
             <div class="overlay"></div>
             <div class="col-xl-5 col-xxl-6 d-xl-block text-center"><img class="img-fluid rounded-3"
                     src="img/runnus2022logowhite.png" alt="..." style="-webkit-filter: drop-shadow(5px 5px 5px #222);
-                        filter: drop-shadow(5px 5px 5px #222); max-height: 40vh" /></div>
+                        filter: drop-shadow(5px 5px 5px #222); max-height: 18vh" /></div>
             <div class="container px-5" style="position: relative; display: flex; justify-content: center;">
                 <div class="col-lg-8">
                     <div class="text-center text-xl-start"
                         style="display: flex; align-items: center; flex-direction:column">
                         <h3 class="display-8 fw-bolder text-white mb-2 pc"
-                            style="font-family: sans-serif Helvetica;font-size: xx-large">
+                            style="font-family: sans-serif Helvetica;font-size: max(1.8vw, 22px)">
                             VIRTUAL RACE: 17 AUG - 17 SEP 2022</h3>
                         <h3 class="display-8 fw-bolder text-white mb-2 pc"
-                            style="font-family: sans-serif Helvetica;font-size: xx-large;">
+                            style="font-family: sans-serif Helvetica;font-size: max(1.8vw, 22px)">
                             PHYSICAL RACE: 17 SEP 2022 (SAT)</h3>
 
                         <!-- mobile view -->
                         <h3 class="display-8 fw-bolder text-white mb-2 mb"
-                        style="font-family: sans-serif Helvetica;font-size: xx-large;">
+                        style="font-family: sans-serif Helvetica;font-size: max(2vw, 20px)">
                         VIRTUAL RACE:<br> 17 AUG - 17 SEP 2022</h3>
                         <h3 class="display-8 fw-bolder text-white mb-2 mb"
-                            style="font-family: sans-serif Helvetica;font-size: xx-large;">
+                            style="font-family: sans-serif Helvetica;font-size: max(2vw, 20px)">
                             PHYSICAL RACE:<br> 17 SEP 2022 (SAT)</h3>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                             <a class="btn btn-warning btn-lg px-4 me-sm-3" href="#"
                                 style="font-weight: bold; color: white; text-decoration: none;" hidden>Submit Race
                                 Proof</a>
-                            <a class="btn btn-warning btn-lg px-4 my-3" href="https://tinyurl.com/RunNUS2022"
+                            <a class="btn btn-warning btn-lg px-4 my-3" href="https://bit.ly/RUNNUS2022"
                                 style="font-weight: bold; color: white; text-decoration: none;">SIGN UP NOW</a>
                             <!-- <a class="btn btn-primary btn-light btn-lg px-4" href="#features">Learn More</a> -->
                         </div>
@@ -180,35 +197,52 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center">
-                            <h1 class="fw-bolder">Quick Links</h1>
+                            <h3 class="fw-bolder">QUICK LINKS</h3>
                             <!-- <h3 class="fw-bolder">Submissions will extended till <br>26 September 2022!</h3> -->
                         </div>
                     </div>
                 </div>
-                <div class="row mb-5 text-center">
-                    <div>
+                <div class="mb-5 text-center buttons">
                         <button type="submit" class="btn btn-warning text-white shadow regbtn"
-                            style="margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
-                            <a class="row justify-content-center" href="https://tinyurl.com/RunNUS2022"
-                                style="text-decoration: none; color: white">Register now!</a>
+                            style="margin: 10px 0px 10px 0px; padding: 20px; font-weight: bold;">
+                            <a class="row justify-content-center" href="https://bit.ly/RUNNUS2022"
+                                style="text-decoration: none; color: white; text-transform: uppercase">Register now!</a>
                         </button>
-                    </div>
-                    <div>
                         <button type="submit" class="btn btn-warning text-white shadow disabled regbtn"
-                            style="margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
+                            style="margin: 10px 0px 10px 0px; padding: 20px; font-weight: bold;">
                             <a class="row justify-content-center" href="#"
-                                style="text-decoration: none; color: white">E-booklet (Coming Soon!)</a>
+                                style="text-decoration: none; color: white; text-transform: uppercase">E-booklet (Coming Soon!)</a>
                         </button>
-                    </div>
 
-                    <div>
                         <button type="submit" class="btn btn-warning text-white shadow regbtn"
-                            style="margin: 10px auto 10px auto; padding: 20px; font-weight: bold;">
-                            <a class="row justify-content-center" href="http://tinyurl.com/RunNUS2022Volunteer"
-                                style="text-decoration: none; color: white">Sign up as a volunteer</a>
+                            style="margin: 10px 0px 10px 0px; padding: 20px; font-weight: bold;">
+                            <a class="row justify-content-center" href="https://bit.ly/RUNNUS2022"
+                                style="text-decoration: none; color: white; text-transform: uppercase">Sign up as a volunteer</a>
                         </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-dark py-1 bg-images-cd"
+            style="display: flex; align-items: center; flex-direction: column; height: 45vh; justify-content: center;">
+            <div class="overlay2"></div>
+            <div class="container px-5" style="position: relative; display: flex; justify-content: center; padding: 10px auto 10px auto;">
+                <div class="col-lg-8" style="display: flex; justify-content: center">
+                    <div class="text-center text-xl-start" style="font-family: 'Digital-7 Mono'; font-weight: normal; font-style: normal;">
+                        <h1 id="vtime" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">12D 01:30:26</h1>
+                        <h2 style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO VIRTUAL RACE</h2>
+                        <h1 id="ptime" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">42D 01:30:26</h1>
+                        <h2 style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO PHYSICAL RACE</h2>
                     </div>
                 </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container px-5 my-5 justify-content-center">
                 <div class="text-center">
                     <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/homepage/1.png" alt="..." /></div>
                     <div><img class="col-11 img-fluid rounded-3 mt-5 shadow" src="img/homepage/2.png" alt="..." /></div>

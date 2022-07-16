@@ -7434,6 +7434,21 @@ textarea.form-control-lg {
   position: relative;
 }
 
+.bg-images-cd {
+  /* The image used */
+  background-image: url("../../img/countdown.png");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
 .bg-about {
   /* The image used */
   background-image: url("../../img/about.jpg");
@@ -10976,6 +10991,25 @@ footer .copyright span {
   top: 0;
 }
 
+.overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f5751d;
+  opacity: 0.80;
+  top: 0;
+}
+
 .chosen {
   color: #f5751d !important;
+}
+
+@font-face {
+  font-family: 'Digital-7 Mono';
+  src: url('Digital-7Mono.woff2') format('woff2'),
+      url('Digital-7Mono.woff') format('woff'),
+      url('Digital-7Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
