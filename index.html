@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201309008-1">
     </script>
-    <script defer src="./dist/js/countdown.js"></script>
+    <script defer src="./dist/js/countdown.js"></script>    
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -250,26 +250,49 @@
             style="display: flex; align-items: center; flex-direction: column; height: 45vh; justify-content: center;">
             <div class="overlay2"></div>
             <div class="px-5" style="position: relative; display: flex; justify-content: center; padding: 10px 0px 10px 0px;">
-                <div class="col-lg-12 timemb" style="justify-content: center">
+                <!-- <div class="col-lg-12 timemb" style="justify-content: center">
                     <div class="text-center text-xl-start" style="font-family: 'Digital-7 Mono'; font-weight: normal; font-style: normal;">
                         <h1 id="vtime" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">12D 01:30:26</h1>
                         <h2 style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO VIRTUAL RACE</h2>
                         <h1 id="ptime" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">42D 01:30:26</h1>
                         <h2 style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO PHYSICAL RACE</h2>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-12 timepc" style="justify-content: center">
                     <div class="text-center text-xl-start" style="font-family: 'Digital-7 Mono'; font-weight: normal; font-style: normal;">
                         <div style="width: 100%">
-                            <span id="vtime" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">12D 01:30:26</span>
+                            <!--  <span id="vtime2" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">12D 01:30:26</span>
                             &nbsp;
-                            <span style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO VIRTUAL RACE</span>
+                            <span style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO VIRTUAL RACE</span>  -->
+                            <table>
+                                <tr id="vtime2" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">
+                                    <td>12:</td><td>01:</td><td>30:</td><td>26</td>
+                                    <td style="text-align: center; font-size: min(60px, (max(7vw, 30px))); color: black">&nbsp; TO VIRTUAL RACE</td>
+                                </tr>
+                                <tr style="text-align: center; color: black">
+                                    <td>DAYS&nbsp;&nbsp;&nbsp;</td>
+                                    <td>HOURS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>MINUTES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>SECONDS</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
                         </div>
                         <div>
-                            <span id="ptime" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">42D 01:30:26</span>
-                            &nbsp;
-                            <span style="text-align: center; font-size: min(60px, (max(7vw, 30px)))">TO PHYSICAL RACE</span>
+                            <table>
+                                <tr id="ptime2" style="text-align: center; font-size: min(90px, max(10vw, 40px)); color: white;">
+                                    <td>42:</td><td>01:</td><td>30:</td><td>26</td>
+                                    <td style="text-align: center; font-size: min(60px, (max(7vw, 30px))); color: black">&nbsp; TO PHYSICAL RACE</td>
+                                </tr>
+                                <tr style="text-align: center; color: black">
+                                    <td>DAYS&nbsp;&nbsp;&nbsp;</td>
+                                    <td>HOURS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>MINUTES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>SECONDS</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>

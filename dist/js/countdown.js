@@ -8,24 +8,35 @@ const mSec = 1000;
 
 function subtractDates(p, f) {
     let diff = f - p;
-    const d = Math.floor(diff / mDay);
+    const d = new String(Math.floor(diff / mDay)).padStart(2, '0');
     diff %= mDay;
-    const h =  Math.floor(diff / mHour);
+    const h = new String(Math.floor(diff / mHour)).padStart(2, '0');
     diff %= mHour;
-    const m = Math.floor(diff / mMin);
+    const m = new String(Math.floor(diff / mMin)).padStart(2, '0');
     diff %= mMin;
-    const s = Math.floor(diff / mSec);
+    const s = new String(Math.floor(diff / mSec)).padStart(2, '0');
     let str = new String();
-    return str.concat(d).concat("D ").concat(h).concat(":").concat(m).concat(":").concat(s);
+    return [`${d}:`, `${h}:`, `${m}:`, s];
+}
+
+function insert4cells(tr, cells) {
+    tr.childNodes[1].innerHTML = cells[0];
+    tr.childNodes[2].innerHTML = cells[1];
+    tr.childNodes[3].innerHTML = cells[2];
+    tr.childNodes[4].innerHTML = cells[3];
 }
 
 const vTime = document.querySelector("#vtime");
 const pTime = document.querySelector("#ptime");
+const vTime2 = document.querySelector("#vtime2");
+const pTime2 = document.querySelector("#ptime2");
 
 function update() {
     let now = Date.now();
-    vTime.innerHTML = subtractDates(now, virtualRace);
-    pTime.innerHTML = subtractDates(now, physicalRace);
+    // insert4cells(vTime,subtractDates(now, virtualRace));
+    // insert4cells(pTime,subtractDates(now, physicalRace));
+    insert4cells(vTime2,subtractDates(now, virtualRace));
+    insert4cells(pTime2,subtractDates(now, physicalRace));
 }
 
 setInterval(update, 1000);
