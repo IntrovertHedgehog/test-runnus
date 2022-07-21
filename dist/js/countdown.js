@@ -33,8 +33,8 @@ const pTime2 = document.querySelector("#ptime2");
 
 function update() {
     let now = Date.now();
-    // insert4cells(vTime,subtractDates(now, virtualRace));
-    // insert4cells(pTime,subtractDates(now, physicalRace));
+    insert4cells(vTime,subtractDates(now, virtualRace));
+    insert4cells(pTime,subtractDates(now, physicalRace));
     insert4cells(vTime2,subtractDates(now, virtualRace));
     insert4cells(pTime2,subtractDates(now, physicalRace));
 }
